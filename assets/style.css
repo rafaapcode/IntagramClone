@@ -11,5 +11,20 @@ body {
 }
 
 .instagram-wrapper{
-    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
+    height: 100vh;
+}
+
+.insta-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.insta-phone img{
+    height: 35rem;
 }
