@@ -27,6 +27,8 @@ body {
 
 .insta-phone img {
     height: 42rem;
+    transform: translateY(0);
+    animation: imgAnimation 3s ease-in-out infinite;
 }
 
 .insta-continue {
@@ -78,12 +80,24 @@ body {
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
+    margin-top: 5px;
+    transition: .5s ease-in-out;
+}
+
+.insta-login:hover{
+    background-color: #077dcc;
+    transform: scale(1.02);
 }
 
 .insta-logout {
     color: #0095f6;
     margin-top: 1rem;
     text-decoration: none;
+    transition: .5s ease-in-out;
+}
+
+.insta-logout:hover{
+    transform: scale(1.1);
 }
 
 .not-acoount {
@@ -94,6 +108,13 @@ body {
 
 .link-blue{
     color: #0095f6;
+    transition: .5s;
+    margin: 0 10px 0 10px;
+}
+
+.link-blue:hover{
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .get-the-app{
@@ -119,6 +140,11 @@ body {
     width: 10rem;
     background-size: cover;
     background-position: center;
+    transition: .1s;
+}
+
+.app-download:hover{
+    transform: scale(1.02);
 }
 
 .app-download:nth-child(1){
@@ -166,3 +192,8 @@ body {
 
 }
 
+@keyframes imgAnimation{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(10px);}
+    100%{transform: translateY(0);}
+}
